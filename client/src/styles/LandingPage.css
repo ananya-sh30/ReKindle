@@ -1,0 +1,219 @@
+.rekindle-home {
+  text-align: center;
+  padding: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  min-height: 100vh;
+  background: radial-gradient(
+  circle at bottom center,
+  rgba(211, 234, 255, 1) 0%,       /* Blue at bottom */
+  rgba(224, 237, 250, 0.9) 50%,   /* Very light near mid */
+  rgba(255, 255, 255, 1) 80%,     /* Strong white starts here */
+  rgba(255, 255, 255, 1) 100% /* White at top */
+);
+  overflow-x: hidden;     
+  max-width: 100vw;
+}
+
+.timeline-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+  height: 50px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  display: inline-block;
+  color: #333;
+  user-select: none;
+}
+
+.dot.active {
+  color: #e76f51;
+  font-weight: bold;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: visible; /* allow cards to rise outside container */
+  margin: 2rem 0;
+  position: relative;
+  height: 360px; /* a little taller to accommodate bigger cards */
+  display: flex;
+  justify-content: center;
+  gap: 60px; 
+}
+
+
+.card h3{
+  background: linear-gradient(182deg, rgba(23, 64, 114, 1) 0%, rgba(43, 121, 216, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+.card.active {
+  opacity: 1;
+  transform: translateY(-20px) scale(1);
+  background: white;
+  font-weight: bold;
+  color: #222;
+}
+
+.card.side {
+  opacity: 0.5;
+  transform: translateY(20px) scale(0.85);
+  color: #666;
+}
+
+.card .icon {
+  font-size: 3.5rem; /* bigger icon */
+  margin-bottom: 1.2rem;
+  transition: color 0.5s ease;
+}
+
+.card.active .icon {
+  color: #e76f51;
+}
+
+
+.line {
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background: #3b82f6;
+  position: absolute;
+}
+
+.line.left {
+  left: -90px;
+}
+
+.line.right {
+  right: -90px;
+}
+
+.header .highlight {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.header p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.start, .learn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.start {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.learn {
+  background: #333;
+  color: #fff;
+}
+.timeline-container {
+  width: 100%;
+  overflow: visible; /* So dots can scale bigger */
+  margin: 10px 0;
+  position: relative;
+  height: 60px; /* a bit taller for dot animation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px; /* space between dots */
+}
+
+.dot {
+  display: inline-block;
+  color: #333;
+  user-select: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 1.2rem;
+  opacity: 0.4;
+  transform: translateY(8px);
+}
+
+.dot.active {
+  color: #e76f51;
+  font-weight: 700;
+  opacity: 1;
+  font-size: 1.8rem;
+  transform: translateY(0);
+}
+.land-button {
+  display: flex;
+  gap: 16px; /* space between buttons */
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-get-started, .btn-learn-more {
+  padding: 10px 40px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background: #2B79D8;
+  background: linear-gradient(323deg, rgba(43, 121, 216, 1) 0%, rgba(23, 64, 114, 1) 100%);
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  
+}
+
+.btn-learn-more {
+  background: none;
+  background-color: #3B3B3B; /* gray for Learn More */
+  padding: 12px 55px;
+}
+
+.btn-get-started svg{
+    margin-left: 5px;
+}
+/* Optional: hover effect */
+.btn-get-started:hover {
+  background: none;
+  background-color: #0056b3;
+}
+.btn-learn-more:hover {
+  background-color: #5a6268;
+}
+

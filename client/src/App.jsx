@@ -1,10 +1,10 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { useUser } from './components/UserContext';
-import LandingPage from './components/LandingPage';
-import Signup from './components/SignUp';
-import Login from './components/Login';
-import Dashboard from './components/Dashboard';
-import OAuthCallback from './components/OAuthCallback';
+import { useUser } from './pages/UserContext';
+import LandingPage from './pages/LandingPage';
+import Signup from './pages/SignUp';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import OAuthCallback from './pages/OAuthCallback';
 import "./App.css"
 function App() {
   const { email, loading } = useUser();

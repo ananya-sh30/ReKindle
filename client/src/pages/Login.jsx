@@ -12,7 +12,7 @@ export default function Login() {
 
   const checkUserExists = async (email) => {
   const { data, error } = await supabase
-    .from('users')      // your existing users table
+    .from('users')      
     .select('email')
     .eq('email', email)
     .single()
@@ -80,6 +80,11 @@ const handleMagicLinkLogin = async () => {
 
   return (
     <div className='login-container'>
+      <div className="logo-main">
+        <span className="logo-blue">{'{Re}'}</span> Kindle
+        
+      </div>
+      <br/><br/>
       <h1>Welcome Back!</h1>
       <p style={{fontSize: '18px', fontWeight:'400', color:'grey', marginBottom:'50px'}}>Pick up where you left off — your unfinished projects are waiting</p>
       <input

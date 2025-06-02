@@ -50,6 +50,11 @@ export default function Signup() {
 
   return (
   <div className="signup-container">
+    <div className="logo-main">
+        <span className="logo-blue">{'{Re}'}</span> Kindle
+        
+      </div>
+      <br/><br/>
     <h1>Ready to Reignite Your Ideas?</h1>
     <p style={{fontSize: '18px', fontWeight:'400', color:'grey', marginBottom:'50px'}}>Create your account and unlock AI-powered tools to revive your unfinished projects.</p>
 

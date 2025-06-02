@@ -1,0 +1,157 @@
+.left-box.box-0 {
+  top: 2%;
+  left: 50%;
+  transform: translateX(-150%);
+  position: absolute;
+}
+
+.left-box.box-1 {
+  top: 50%;
+  left: 30%;
+  position: absolute;
+}
+.right-box.box-0 {
+  top: 4%;
+  right: 30%;
+  position: absolute;
+}
+
+.right-box.box-1 {
+  top: 50%;
+  right: 15%;
+  position: absolute;
+}
+
+.landing-body {
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px 40px 0px;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+.landing-header {
+  text-align: center;
+  position: relative;
+  max-width: 1200px;
+}
+
+.circuit-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.crooked-lines {
+  flex: 1;
+  position: relative;
+  height: 150px;
+  padding-top: 10px;
+}
+
+
+.circuit-path {
+  stroke: #dadada;
+  stroke-width: 2;
+  fill: none;
+}
+
+
+.heading-text {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+
+  flex-shrink: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+.first-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.highlight {
+  background: linear-gradient(182deg, rgba(23, 64, 114, 1) 0%, rgba(43, 121, 216, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.circuit-path {
+  stroke: #e5e7eb;
+  stroke-width: 2;
+  fill: none;
+}
+
+.circuit-highlight {
+  stroke: #2073c5;
+  stroke-width: 2;
+  fill: none;
+  animation: circuit-flow 3s ease-in-out infinite;
+}
+
+.circuit-box {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 2px solid #d1d5db;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin: 0%;
+}
+
+/* Optional animation keyframes */
+@keyframes circuit-flow {
+  0% {
+    stroke-dasharray: 0, 1000;
+  }
+  50% {
+    stroke-dasharray: 100, 1000;
+  }
+  100% {
+    stroke-dasharray: 0, 1000;
+  }
+}
+@media (max-width: 768px) {
+  .left-box.box-0, .left-box.box-1,
+  .right-box.box-0, .right-box.box-1 {
+    display: none;
+  }
+
+  .circuit-row {
+    flex-direction: column;
+  }
+
+  .heading-text .first-line,
+  .heading-text .second-line {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}

@@ -21,10 +21,8 @@ export default function OAuthCallback() {
       const email = user.email
       const username = email.split('@')[0]
 
-      // Set email in UserContext ✅
       setEmail(email)
 
-      // Save user in your DB
       try {
         const response = await fetch(`${apiUrl}/api/save-user`, {
           method: 'POST',

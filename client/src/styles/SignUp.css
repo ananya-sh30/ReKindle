@@ -1,12 +1,12 @@
 /* src/styles/SignUp.css */
 
 .signup-container {
-  max-width: 500px;
-  margin: 90px auto;
+  max-width: 600px;
+  margin: 40px auto;
   padding: 50px 50px;
   background: #ffffff;
   border-radius: 12px;
-  text-align: center;
+  text-align: left;
   box-shadow: rgba(142, 142, 147, 0.2) 0px 7px 29px 0px;
 }
 
@@ -14,12 +14,13 @@
   margin-bottom: 25px;
   font-weight: 700;
   color: #222;
+  font-size: 30px;
 }
 .input-box {
     margin-top: 20px;
 }
 .signup-input {
-  width: 90%;
+  width: 95%;
   padding: 12px 18px;
   border: 1.5px solid #c4c4c4;
   border-radius: 6px;
@@ -28,15 +29,16 @@
 }
 .signup-input::placeholder {
     font-size: 15px;
+    font-weight: 600;
 }
 .signup-input:focus {
   outline: none;
-  border-color: #6366f1; /* Indigo-500 */
-  box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
+  border-color: #084479; 
+  box-shadow: 0 4px 8px rgba(99, 158, 241, 0.4);
 }
 
 .signup-button {
-  width: 98%;
+  width: 95%;
   padding: 16px 20px;
   margin-top: 20px;
   border: none;
@@ -44,8 +46,8 @@
   font-size: 1rem;
   cursor: pointer;
   color: white;
-  background: #6366f1; /* Indigo-500 */
-  box-shadow: 0 4px 8px rgba(99, 102, 241, 0.4);
+  background: #1962bc; /* Indigo-500 */
+  box-shadow: 0 4px 8px rgba(99, 158, 241, 0.4);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
    font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -54,8 +56,8 @@
 }
 
 .signup-button:hover:not(:disabled) {
-  background-color: #4f46e5; /* Indigo-600 */
-  box-shadow: 0 6px 12px rgba(79, 70, 229, 0.6);
+  background: #1962bc; /* Indigo-500 */
+  box-shadow: 0 4px 8px rgba(99, 158, 241, 0.4);
 }
 
 .signup-button:disabled {
@@ -68,6 +70,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .signup-button-google {
     width: 98%;
