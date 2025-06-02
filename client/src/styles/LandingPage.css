@@ -14,6 +14,8 @@
 );
   overflow-x: hidden;     
   max-width: 100vw;
+  position: relative;
+  top:80px;
 }
 
 .timeline-container {
@@ -215,5 +217,32 @@
 }
 .btn-learn-more:hover {
   background-color: #5a6268;
+}
+.faq-head {
+  background: linear-gradient(182deg, rgba(23, 64, 114, 1) 0%, rgba(43, 121, 216, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.faq-section{
+  background: radial-gradient(
+  circle at bottom center,
+  rgba(211, 234, 255, 1) 0%,       /* Blue at bottom */
+  rgba(224, 237, 250, 0.9) 50%,   /* Very light near mid */
+  rgba(255, 255, 255, 1) 80%,     /* Strong white starts here */
+  rgba(255, 255, 255, 1) 100% /* White at top */
+);
+}
+.feature-section {
+  margin-left: 10%;
+}
+.feature-text{
+  font-weight: 500;
+  font-size: 17px;
+}
+.feature-text-head{
+  color:rgba(23, 92, 165, 0.97);
 }
 

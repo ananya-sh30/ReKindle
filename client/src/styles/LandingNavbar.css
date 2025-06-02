@@ -3,11 +3,15 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  font-family: sans-serif;
-  background-color: #fff;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: #fff;
+  position: fixed; /* added */
+  top: 0;          /* added */
+  left: 0;         /* added */
+  width: 100%;     /* added */
+  z-index: 1000; 
 }
 
 .logo-main {

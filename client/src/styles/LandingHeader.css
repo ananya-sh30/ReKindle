@@ -1,24 +1,24 @@
 .left-box.box-0 {
   top: 2%;
-  left: 50%;
+  left: 66%;
   transform: translateX(-150%);
   position: absolute;
 }
 
 .left-box.box-1 {
   top: 50%;
-  left: 30%;
+  left: 40%;
   position: absolute;
 }
 .right-box.box-0 {
-  top: 4%;
-  right: 30%;
+  top: 2%;
+  right: 60%;
   position: absolute;
 }
 
 .right-box.box-1 {
   top: 50%;
-  right: 15%;
+  right: 40%;
   position: absolute;
 }
 

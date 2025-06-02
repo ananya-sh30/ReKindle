@@ -23,6 +23,8 @@ function App() {
       <Route path="/dashboard" element={email ? <Dashboard /> : <Navigate to="/" />} />
 
       <Route path="*" element={<Navigate to={email ? "/dashboard" : "/"} />} />
+   
+
     </Routes>
   );
 }

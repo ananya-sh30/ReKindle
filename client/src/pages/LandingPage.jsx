@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/LandingPage.css';
 import LandingNavbar from '../components/LandingNavbar';
 import LandingHeader from '../components/LandingHeader';
+import FAQSection from '../components/FAQ';
+import Feature from '../components/Feature';
+import Footer from '../components/Footer';
+
 import { Icons } from '../components/Icons';
 import { useNavigate } from 'react-router-dom';
+
 const cards = [
   { title: 'Rediscover', sub:'Unearth your forgotten gems', description: 'Drop in old code, sketches, or docs — we will map their potential instantly', icon: <Icons.Discover />},
   { title: 'Reignite', sub:'Let AI spark the next move', description: 'Get smart nudges, pivot paths, and a second opinion that thinks in code', icon: <Icons.Ignite /> },
@@ -17,6 +22,9 @@ const CARD_WIDTH = 1200;
 
 export default function LandingPage() {
   const [active, setActive] = useState(0);
+
+  const featuresRef = useRef(null);
+  const faqRef = useRef(null);
 
   const navigate = useNavigate();
   const handleSignClick = () => {
@@ -48,7 +56,7 @@ useEffect(() => {
 
   return (
     <div>
-      <LandingNavbar/>
+      <LandingNavbar featuresRef={featuresRef} faqRef={faqRef}/>
     <div className="rekindle-home" style={{ padding: '20px', textAlign: 'center' }}>
       <LandingHeader/>
 
@@ -193,6 +201,17 @@ useEffect(() => {
         })}
       </div>
     </div>
+   
+  
+    <section ref={featuresRef} id="features">
+        <Feature />
+      </section>
+
+      <section ref={faqRef} id="faq">
+         <FAQSection/>
+      </section>
+
+      <Footer/>
     </div>
   );
 }
